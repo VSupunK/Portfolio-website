@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url("images/backgroundimg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /*overflow: hidden;*/
+    /*background: linear-gradient(to right, #9c27b0, #8ecdff);*/
+}
+nav{
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+    position: relative;
+    margin:  auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to left, #9c27b0, #8ecdff);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.logo{
+    flex-basis: 20%;
+    padding: 5px;
+}
+.logo img{
+    width: 150px;
+    background: #f1edf1;
+    padding: 5px;
+    align-items: center;
+    border-radius: 5px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul{
+    margin-right: 20px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 20px;
+    padding: 10px 15px;
+    width: fit-content;
+    height: auto;
+    text-align: center;
+}
+.nav-links ul li a i{
+    width: 30px;
+    font-size: 15px;
+    text-align: left;
+}
+.nav-links ul li:hover{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px 15px;
+    width: fit-content;
+    height: auto;
+    text-align: center;
+    background: linear-gradient(to left, #3a0942, #0e3b5f);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*-----fotm-conatin-------------------*/
+.form-contain{
+    margin: 10px 150px 10px 150px;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.31);
+
+}
+.form-contain h1{
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    display: flex;
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.btn.btn2{
+    display: inline-block;
+    background: linear-gradient(to left, #801792, #3480be);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn.btn2:hover{
+    background: linear-gradient(to left, #3a0942, #0e3b5f);
+    color: #fff;
+}
+
+
+/*.animation-name h2{
+    position:relative;
+    font-size: 14vw;
+    color: transparent;
+    opacity: 0.8;
+    -webkit-text-stroke: 0.3vw transparent;
+    text-transform: uppercase;
+    font-family:  'Courier New', monospace;
+    padding: 10px;
+
+}
+.animation-name h2::before{
+    content: attr(data-text);
+    font-size: 14vw;
+    position: absolute;
+    height: fit-content;
+    color: #0e3b5f;
+    opacity: 0.8;
+    -webkit-text-stroke: 0.3vw #3a0942;
+    /*border-right: 2px solid #3a0942;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}*/
+
+
+/*---------------footer----------------*/
+.footer{
+    left: 0;
+    bottom: 0;
+    position:relative;
+    height: auto;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: linear-gradient(to left, #3a0942, #0e3b5f);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+.footer h2{
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.footer ul{
+    padding: 5px;
+    text-decoration: none;
+    list-style: none;
+    color: #8ecdff;
+    
+}
+.footer ul li i{
+    color: #9c27b0;
+}
+
+.footer .services,.contact{
+    display:inline-block;
+    padding-top: 5px;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    padding: 5px;
+}
+.footer div{
+    display: inline-block;
+}
+.footer hr{
+    color: #3a0942;
+
+}
+.footer h1{
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer .tag h1{
+    color: #3a0942;
+    font-size: 2vw;
+    display: inline-block;
+    padding: 5px;
+}
+.tag h1::before{
+    content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    color: #0e3b5f;
+    opacity: 0.8;
+    -webkit-text-stroke: 0.08vw #8ecdff ;
+    overflow: hidden;
+    animation: text-animate 8s linear infinite;
+    margin-bottom: 10px;
+}
+@keyframes text-animate{
+    0%,20%,100%
+    {
+        width: 0;
+    }
+    50%,70%
+    {
+        width:30%;
+    }
+}
+
+
+.shortcut{
+    z-index: 3;
+    position: fixed;
+    right: 0;
+    bottom: 20%;
+    width: fit-content;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px black;
+    
+    padding: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.shortcut ul{
+    list-style: none;
+}
+.shortcut ul li button{
+    background: linear-gradient(to left, #a53ab6, #3887c7);
+    margin: 5px;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    transition: 0;
+    box-shadow: 0 0 10px black;
+}
+.shortcut ul li button:hover{
+    scale: 1.15;
+    background: #0e3b5f;
+    color: #8ecdff;
+
+}
+.shortcut ul li button i{
+    font-size: 20px;
+    font-weight: 400;
+}
+.shortcut ul li #tooltiptext{
+    position: absolute;
+    font-size: 15px;
+    float: left;
+    right: 0;
+    transform: translateX(-50px);
+    background-color: #000;
+    color: #fff;
+    white-space: nowrap;
+    padding: 5px 10px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 4;
+}
+.shortcut #tooltiptext::before{
+    content: '';
+    position:absolute;
+    right: 0;
+    right: 0;
+    transform: translateX(60%);
+    border: 5px solid;
+    border-color: #0000 #0000 #000 #000;
+}
+.shortcut ul li:hover #tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
+
+/*--------------popup chat------------------*/
+/* The popup chat which is hidden by default */
+.chat-popup{
+    display:none;
+    position: fixed;
+    bottom:0;
+    right:15px;
+    bottom: 20%;
+    z-index:9;
+  }
+  
+  /* Adds styles to the form container */
+  .form-container{
+    max-width:300px;
+    padding: 10px;
+    background-color: rgb(133, 130, 130);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  }
+  
+  /* Enables full-width textarea */
+  .form-container textarea{
+    width:100%;
+    padding:15px;
+    margin:5px 0 22px 0;
+    border:none;
+    background: #cccaca;
+    border-radius: 8px;
+    resize:none;
+    min-height:200px;
+    color: #000;
+  }
+  /* When the textarea gets focus, do something (changes color)*/
+  .form-container textarea:focus{
+    background-color:#ddd;
+    outline:none;
+  }
+  /* Set a style for the submit/send button */
+  .form-container .btn{
+    background-color: #04aa6d;
+    font-size: 15px;
+    font-weight: 600;
+    color:rgb(102, 58, 58);
+    padding:16px 20px;
+    border-radius: 8px;
+    border:none;
+    cursor:pointer;
+    width:100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+  /* Adds a red background color to the cancel button */
+  .form-container .cancel{
+    background-color: red;
+  }
+  
+  /* Adds hover effects to all the buttons */
+  .form-container .btn:hover, .open-button:hover{
+    opacity:1;
+  }

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealPhone</title>
+    <link rel="stylesheet" href="cart-style.css">
+    <script src="https://kit.fontawesome.com/8380a84a61.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="Home.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="Phone.html"><i class="fa-solid fa-phone"></i>Phone</a></li>
+                    <li><a href="#"><i class="fa-solid fa-screwdriver-wrench"></i>Accessories</a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+    <!---cart item details-->
+<div class="container cart-page">
+
+        <table border="1">
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/mobile.png">
+                        <div>
+                            <p>Samsung S10 Pro</p>
+                            <small>Price : 135 000 LKR</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td id="input-box"><input type="number" value="1"></td>
+                <td>135 000 LKR</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>135 000 LKR</td>
+                </tr>
+                <tr>
+                    <td>Discount %</td>
+                    <td>4.5%</td>
+                </tr>
+                <tr>
+                    <td>Bonus</td>
+                    <td>-6 075 LKR</td>
+                </tr>
+                <tr id="total-amount">
+                    <td>Total</td>
+                    <td>128 925 LKR</td>
+                </tr>
+            </table>
+        </div>
+</div>
+
+<!---------Footer----------->
+        <div class="footer">
+            <div class="services">
+                <h4>Customer Services</h4>
+                <hr>
+                <ul>
+                <li>Mobile Repairing</li>
+                <li>Mobile & Accesories Online Delivery</li>
+                <li>Connection Repairing</li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                    <h4>Contact Us</h4>
+                    <hr>
+            <div>
+                <ul>
+                    <li><i class="fa-solid fa-envelope"></i> Email  : <a href="realphone@gmail.com">realphone@gmail.com</a></li>
+                    <li><i class="fa-solid fa-phone-volume"></i> Mobile : +94 4562451</li>
+                    <li><i class="fa-brands fa-whatsapp"></i> Whatsapp : +94 7125436</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i> Facebook : #Real Phone Mobile Center </li>
+                    <li><i class="fa-brands fa-instagram"></i> Instagram : @realphone</li>
+                    <li><i class="fa-brands fa-linkedin"></i> LinkedIn &nbsp;&nbsp;: Real Phone</li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="tag">
+                <h1 data-text="Join&nbsp;with&nbsp;us!&nbsp;Enjoy&nbsp;yourself...">Join with us! Enjoy yourself...</h1>
+            </div>
+            
+            
+        </div>
+ 
+        <div class="shortcut">
+            <ul>
+                <li><span id="tooltiptext">Chat</span><button class="chat-button" onclick="openForm()"><i class="fa-regular fa-comment"></i></button></li>
+                <li><span id="tooltiptext">Comments</span><button class="comment-button" onclick="gotoForm()"><i class="fa-solid fa-paper-plane"></i></button></li>
+            </ul>   
+        </div>
+        <div class="chat-popup" id="myForm">
+            <form class="form-container" action="#">
+              <h1>Chat</h1>
+          
+              <label for="msg">Enter your message below!</label>
+              <textarea placeholder="Type your message..." name="msg" required></textarea>
+          
+              <button type="submit" class="btn">Send</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+</body>
+
+<script>
+    //function to open the popup
+    function openForm(){
+      document.getElementById("myForm").style.display="block";
+    }
+    //function to close the popup
+    function closeForm(){
+      document.getElementById("myForm").style.display="none";
+    }
+    //go to form//
+    function gotoForm(){
+        window.open('Form.html', '_self');
+    }
+  </script>
+</html>

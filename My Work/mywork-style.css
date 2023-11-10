@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(rgb(6, 65, 16),rgb(22, 43, 49));
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/bg2.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: static;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    right: 0;
+    margin-right: 10px;
+    z-index: 2;
+}
+
+nav a:hover {
+    color: #bfcd1e;
+
+  }
+
+.logo{
+    width: 150px;
+    height: auto;
+    margin-right: 90vh;
+    background: #fff;
+    opacity: 0.8;
+    border-radius: 5px;
+    left: 10px;
+    position: fixed;
+}
+
+nav ul{
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    padding: 0px 5px;
+    
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #bfcd1e;
+    position:absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 120px;
+    font-size: 100px;
+    color: #fff;
+    text-align: center;
+    position:static;
+}
+
+.header-text p{
+    font-family:"Poppins", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.header-text h1 span{
+    color: #bfcd1e;
+}
+
+
+.list-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+.list-item{
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(135deg,rgba(0,0,0,0.2),rgba(255, 255, 255, 0.2));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    transition: 1s;
+}
+.list-item:nth-child(1) img{
+    width: 30vh;
+    height: auto;
+    justify-items: center;
+    align-items: center;
+    margin: 15px;
+    background: #9291d6;
+    box-shadow: 0 0 10px rgba(236, 230, 230, 0.8);
+    padding: 10px;
+}
+.list-item:nth-child(2) img{
+    width: 30vh;
+    height: auto;
+    justify-items: center;
+    align-items: center;
+    margin: 15px;
+    background: #d69191;
+    box-shadow: 0 0 10px rgba(236, 230, 230, 0.8);
+    padding: 10px;
+}
+.list-item:nth-child(3) img{
+    height: 11vh;
+    width: auto;
+    justify-items: center;
+    align-items: center;
+    margin: 15px;
+    background: #3f114d;
+    box-shadow: 0 0 10px rgba(236, 230, 230, 0.8);
+    padding: 10px;
+}
+.list-item:nth-child(4) img{
+    width: 30vh;
+    height: auto;
+    justify-items: center;
+    align-items: center;
+    margin: 15px;
+    background: #47d3e6;
+    box-shadow: 0 0 10px rgba(236, 230, 230, 0.8);
+    padding: 10px;
+}
+
+.list-item a{
+    text-decoration: none;
+    color: #ddf00b;
+}
+.list-item:hover{
+    scale: 1.05;
+    background: linear-gradient(180deg,rgba(0,0,0,0.2),rgba(255, 255, 255, 0.2));
+    transition: 0.5s;
+}
+
+
+/*--------------footer-------------*/
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.copyright i{
+    color: #bfcd1e;
+}
+
+.copyright p span{
+    color: #bfcd1e;
+    font-weight: 700;
+    font-size: large;
+}
+/*---------------------------CSS for Small screens----------------------------*/
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/phone-background.png);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #bfcd1e;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

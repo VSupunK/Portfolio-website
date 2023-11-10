@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    }
+html{
+    scroll-behavior: smooth;
+}
+/*
+body{
+    background-image: url("images/backgroundimg.jpg");
+    background-size: cover;
+    background-position: center;
+}*/
+body{
+    background: linear-gradient(to right, #9c27b0, #8ecdff);
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /*overflow: hidden;*/
+    /*background: linear-gradient(to right, #9c27b0, #8ecdff);*/
+}
+nav{
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+    position: sticky;
+    margin:  auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to left, #9c27b0, #8ecdff);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.logo{
+    flex-basis: 20%;
+    padding: 5px;
+}
+.logo img{
+    width: 150px;
+    background: #f1edf1;
+    padding: 5px;
+    align-items: center;
+    border-radius: 5px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul{
+    margin-right: 20px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 20px;
+    padding: 10px 15px;
+    width: fit-content;
+    height: auto;
+    text-align: center;
+}
+.nav-links ul li a i{
+    width: 30px;
+    font-size: 15px;
+    text-align: left;
+}
+.nav-links ul li:hover{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px 15px;
+    width: fit-content;
+    height: auto;
+    text-align: center;
+    background: linear-gradient(to left, #3a0942, #0e3b5f);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*----------cart item details------------------*/
+.container{
+    padding: 10px 10%;
+}
+.cart-page{
+    margin: 80px auto;
+    
+}
+.cart-page table{
+    width: 100%;
+    border-collapse: collapse;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.31);
+    background: rgba(0, 0, 0, 0.2);
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10px;
+}
+.cart-info p{
+    font-weight: 700;
+}
+
+.cart-page table tr th{
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    background: #0e3b5f;
+    font-weight: normal;
+}
+.cart-page table tr td{
+    padding: 10px 5px;
+}
+.cart-page table tr td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    background: transparent;
+    border: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cart-page table tr #input-box{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.cart-page table tr td a{
+    color: #3a0942;
+    font-size: 12px;
+}
+.cart-page table tr td img{
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.total-price table{
+    border-top: 3px solid #0e3b5f;
+    width: 100%;
+    max-width: 300px;
+    background: rgba(255, 255, 255, 0.3);
+}
+td:last-child{
+    text-align: right;
+    padding-right: 20px;
+}
+#total-amount{
+    font-weight: 700;
+}
+
+/*---------------footer----------------*/
+.footer{
+    left: 0;
+    bottom: 0;
+    position:relative;
+    height: auto;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: linear-gradient(to left, #3a0942, #0e3b5f);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+.footer h2{
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.footer ul{
+    padding: 5px;
+    text-decoration: none;
+    list-style: none;
+    color: #8ecdff;
+    
+}
+.footer ul li i{
+    color: #9c27b0;
+}
+
+.footer .services,.contact{
+    display:inline-block;
+    padding-top: 5px;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    padding: 5px;
+}
+.footer div{
+    display: inline-block;
+}
+.footer hr{
+    color: #3a0942;
+
+}
+.footer h1{
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer .tag h1{
+    color: #3a0942;
+    font-size: 2vw;
+    display: inline-block;
+    padding: 5px;
+}
+.tag h1::before{
+    content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    color: #0e3b5f;
+    opacity: 0.8;
+    -webkit-text-stroke: 0.08vw #8ecdff ;
+    overflow: hidden;
+    animation: text-animate 8s linear infinite;
+    margin-bottom: 10px;
+}
+@keyframes text-animate{
+    0%,20%,100%
+    {
+        width: 0;
+    }
+    50%,70%
+    {
+        width:30%;
+    }
+}
+
+.shortcut{
+    z-index: 3;
+    position: fixed;
+    right: 0;
+    bottom: 20%;
+    width: fit-content;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px black;
+    
+    padding: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.shortcut ul{
+    list-style: none;
+}
+.shortcut ul li button{
+    background: linear-gradient(to left, #a53ab6, #3887c7);
+    margin: 5px;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    transition: 0;
+    box-shadow: 0 0 10px black;
+}
+.shortcut ul li button:hover{
+    scale: 1.15;
+    background: #0e3b5f;
+    color: #8ecdff;
+
+}
+.shortcut ul li button i{
+    font-size: 20px;
+    font-weight: 400;
+}
+.shortcut ul li #tooltiptext{
+    position: absolute;
+    font-size: 15px;
+    float: left;
+    right: 0;
+    transform: translateX(-50px);
+    background-color: #000;
+    color: #fff;
+    white-space: nowrap;
+    padding: 5px 10px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 4;
+}
+.shortcut #tooltiptext::before{
+    content: '';
+    position:absolute;
+    right: 0;
+    right: 0;
+    transform: translateX(60%);
+    border: 5px solid;
+    border-color: #0000 #0000 #000 #000;
+}
+.shortcut ul li:hover #tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
+/* The popup chat which is hidden by default */
+.chat-popup{
+    display:none;
+    position: fixed;
+    bottom:0;
+    right:15px;
+    bottom: 20%;
+    z-index:9;
+  }
+  
+  /* Adds styles to the form container */
+  .form-container{
+    max-width:300px;
+    padding: 10px;
+    background-color: rgb(133, 130, 130);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  }
+  
+  /* Enables full-width textarea */
+  .form-container textarea{
+    width:100%;
+    padding:15px;
+    margin:5px 0 22px 0;
+    border:none;
+    background: #cccaca;
+    border-radius: 8px;
+    resize:none;
+    min-height:200px;
+  }
+  /* When the textarea gets focus, do something (changes color)*/
+  .form-container textarea:focus{
+    background-color:#ddd;
+    outline:none;
+  }
+  /* Set a style for the submit/send button */
+  .form-container .btn{
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #04aa6d;
+    color:white;
+    padding:10px 10px;
+    border-radius: 8px;
+    border:none;
+    cursor:pointer;
+    width:100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+  /* Adds a red background color to the cancel button */
+  .form-container .cancel{
+    background-color: red;
+  }
+  
+  /* Adds hover effects to all the buttons */
+  .form-container .btn:hover, .open-button:hover{
+    opacity:1;
+  }

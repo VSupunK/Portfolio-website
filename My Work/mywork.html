@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSK Creations</title>
+    <link rel="icon" type="image/x-icon" href="..\Images\logo-Copy.ico">
+    <link rel="stylesheet" href="mywork-style.css">
+    <script src="https://kit.fontawesome.com/8380a84a61.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="../index.html"><img src="images/logo.png" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="..\index.html#header">Home</a></li>
+                    <li><a href="..\index.html#about">About</a></li>
+                    <li><a href="..\index.html#services">Services</a></li>
+                    <li><a href="..\index.html#portfolio">Porfolio</a></li>
+                    <li><a href="..\index.html#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>My Work</p>
+                <h1></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-------List-container--------->
+    <div class="list-container">
+        <div class="list-item">
+            <img src="Images\socialbook-logo.png" alt="Social Book">
+            <h4>Socialbook</h4>
+            <p>The web site that like Facebook.</p>
+            <a href="..\Social Media\Social Book\socialbook.html" target="_blank">Click here to visit the <b>Socialbook</b></a>
+        </div>
+
+        <div class="list-item">
+            <img src="Images\Vidtube-logo.png" alt="VidTube">
+            <h4>VidTube</h4>
+            <p>The web site that like Youtube.</p>
+            <a href="..\Social Media\VidTube\index.html" target="_blank">Click here to visit the <b>VidTube</b><a></a>
+        </div>
+        <div class="list-item">
+            <img src="Images/tonemusic.png" alt="Tone Music">
+            <h4>Tone Music</h4>
+            <p>The Music Player.</p>
+            <a href="..\Tone Music/Music-Player-main/index.html" target="_blank">Click here to visit the <b>Tone Music</b><a></a>
+        </div>
+        <div class="list-item">
+            <img src="Images/Realphone-logo.png" alt="Tone Music">
+            <h4>RealPhone Online Mobile Store</h4>
+            <p>Online Shopping web site.</p>
+            <a href="..\RealPhone Mobile Shop/Home.html" target="_blank">Click here to visit the <b>Tone Music</b><a></a>
+        </div>
+    </div>   
+    
+    <div class="copyright">
+        <p>Copyright © <span>VSK Creations</span>. See You Again <i class="fa-solid fa-heart"></i></p>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            seidemenu.style.right = "0";
+        }
+        function closemenu(){
+            seidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSK Creations</title>
+    <link rel="icon" type="image/x-icon" href="Images/logo-Copy.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8380a84a61.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Porfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Supun Kalhara</span> <br>From Sri Lanka</h1>
+            </div>
+        </div>
+    </div>
+    
+    <!--------about---------about------------about------------about---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.png"/>
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-para1">
+                        I am Supun Kalhara a student of Sabaragamuwa University of Sri Lanka. I am following a Degree in BSc.(Hons) Information System. I have skills to provide good output for my clients.
+                        I works hard. 
+                    </p><p class="about-para1">
+                       It is one of the finest 
+                        qualities that a person can possess. A person 
+                        or an individual may have a number of good 
+                        qualities, but if that person is modest then 
+                        he gets the respect of everyone around him. 
+                        Those who are humble or modest are considered 
+                        to be wise. They do not bother if anyone notices 
+                        their good deeds.</p> 
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>App/Coding</li>
+                            <li><span>HTML/CSS/JavaScript</span><br>Web Development</li>
+                            <li><span>MS Office Package</span><br>Document Create</li>
+                            <li><span>Photo Shop</span><br>Graphic Design</li>
+                            
+                        </ul>
+                    </div>
+
+                        
+
+                    <div class="tab-contents" id="education">
+                        <!--<ul>
+                            <li><span>G.C.E. (O/L) Examination - 2017</span><br>Passed with 8-'A's & 1-'B'</li>
+                            <li><span>G.C.E. (O/L) Examination - 2020</span><br>Passed with 1-'B's & 2-'C's</li>
+                            <li><span>Undergraduate from 2022</span><br>BSc.(Hons)Computing & Information Systems at SUSL</li>            
+                        </ul>-->
+                        <table>
+                            <caption>G.C.E. (O/L) Examination - 2017</caption>
+                            <tr>
+                              <th>No</th>
+                              <th>Subjects</th>
+                              <th>Grades</th>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>Buddhist</td>
+                              <td>A</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Sinhala</td>
+                              <td>A</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>Mathematics</td>
+                              <td>A</td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>Science</td>
+                              <td>A</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>History</td>
+                              <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>English</td>
+                                <td>B</td>
+                              </tr>
+                              <tr>
+                                <td>7</td>
+                                <td>Commerce</td>
+                                <td>A</td>
+                              </tr>
+                              <tr>
+                                <td>8</td>
+                                <td>Art</td>
+                                <td>A</td>
+                              </tr>
+                              <tr>
+                                <td>9</td>
+                                <td>I.C.T</td>
+                                <td>A</td>
+                              </tr>
+                          </table>
+
+                          <table>
+                            <caption>G.C.E. (O/L) Examination - 2017</caption>
+                            <tr>
+                              <th>No</th>
+                              <th>Subjects</th>
+                              <th>Grades</th>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>Physics</td>
+                              <td>C</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Mathematics</td>
+                              <td>C</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>I.C.T</td>
+                              <td>B</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Learn in Programming Language</li>
+                            <li><span>Before </span><br>Work in Information & Communication Technology Feiled</li>
+                            
+                                        
+                        </ul>
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----Services-------Services----------Services----------Services------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i><br>
+                    <h2>Web Design</h2>
+                    <p> Welcome to my world of web design, where creativity meets functionality to craft captivating online experiences. I specialize in the art of shaping digital landscapes, turning ideas into visually stunning and user-friendly websites.
+                    </p>
+                    <a href="#">Learn More...</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i><br>
+                    <h2>UI/UX Design</h2>
+                    <p>Welcome to the world of UI/UX design, where I transform digital interactions into intuitive, visually captivating experiences. With a passion for creating seamless user journeys and beautiful interfaces, I specialize in crafting designs that not only look stunning but also prioritize usability and user satisfaction.
+                    </p>
+                    <a href="#">Learn More...</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i><br>
+                    <h2>App Design</h2>
+                    <p>Step into the realm of app design, where I combine innovation and user-centricity to craft visually engaging and intuitive mobile and web applications. With a passion for creating seamless user experiences and captivating interfaces, I specialize in designing apps that not only look stunning but also deliver exceptional usability and functionality.</p>
+                    <a href="#">Learn More...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------portfolio-----------portfolio---------------portfolio-------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png"/>
+                    <div class="layer">
+                        <h2><u>Social Media</u></h2>
+                        <p>My own social media web sites</p>
+                        <a href="My Work/mywork.html" target="_self"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png"/>
+                    <div class="layer">
+                        <h2><u>Entertainment</u></h2>
+                        <p>Tone Music</p>
+                        <a href="My Work/mywork.html" target="_self"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png"/>
+                    <div class="layer">
+                        <h2><u>Online Shoping</u></h2>
+                        <p>My own online shopping store</p>
+                        <a href="My Work/mywork.html" target="_self"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="My Work/mywork.html" class="btn">See More</a> 
+        </div>
+    </div>
+
+    <!----------contact------------contact----------contact---------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>vsupunkalhara@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+94 71 7651 060</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/supun.kalhara.3998/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/supun-kalhara-150529249/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/CV.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © <span>VSK Creations</span>. See You Again <i class="fa-solid fa-heart"></i></p>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            seidemenu.style.right = "0";
+        }
+        function closemenu(){
+            seidemenu.style.right = "-200px";
+        }
+
+    </script>
+<!--------https://github.com/jamiewilson/form-to-google-sheets/blob/master/README.md------->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx_i_f_9hYZy3pp6RKN6GOaC5tsDFyzlHe_lek6YIqx300bDJBZtjRgH6hjiieydl8ZEA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    <!----Google sheet - https://docs.google.com/spreadsheets/d/18bsLNsxnSvXATJ3Lzp5hYfJTq4airDqq1g4CrGgE4Qw/edit#gid=0------->
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Massege sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+    
+</body>
+</html>

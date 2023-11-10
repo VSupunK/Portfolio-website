@@ -1,0 +1,128 @@
+<!--Created by CodingPorium,2021. Visit https://youtube.com/c/codingporium for more tutorials like this -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Popup Chat Window using HTML,CSS & JS | CodingPorium</title>
+  </head>
+  <style>
+  /*Import Poppins Font*/
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/*CSS Reset*/
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+/*Background color for whole page*/
+body{
+  background-color: #5d17cf;
+}
+
+/* Button used to open the chat form - fixed at the bottom right of the page */
+.open-button{
+  background-color: white;
+  color:#5d17cf;
+  padding:16px 20px;
+  border-radius: 8px;
+  border:none;
+  cursor:pointer;
+  opacity:0.8;
+  position: fixed;
+  bottom:23px;
+  right:28px;
+  width:280px;
+  transition:0.3s;
+}
+
+/* The popup chat which is hidden by default */
+.chat-popup{
+  display:none;
+  position: fixed;
+  bottom:0;
+  right:15px;
+  z-index:9;
+}
+
+/* Adds styles to the form container */
+.form-container{
+  max-width:300px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+/* Enables full-width textarea */
+.form-container textarea{
+  width:100%;
+  padding:15px;
+  margin:5px 0 22px 0;
+  border:none;
+  background: #f1f1f1;
+  border-radius: 8px;
+  resize:none;
+  min-height:200px;
+}
+/* When the textarea gets focus, do something (changes color)*/
+.form-container textarea:focus{
+  background-color:#ddd;
+  outline:none;
+}
+/* Set a style for the submit/send button */
+.form-container .btn{
+  background-color: #04aa6d;
+  color:white;
+  padding:16px 20px;
+  border-radius: 8px;
+  border:none;
+  cursor:pointer;
+  width:100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+/* Adds a red background color to the cancel button */
+.form-container .cancel{
+  background-color: red;
+}
+
+/* Adds hover effects to all the buttons */
+.form-container .btn:hover, .open-button:hover{
+  opacity:1;
+}
+  </style>
+
+  <body>
+<center>
+  <h1 style="color:white;">CodingPorium Chat Centre</h1>
+</center>
+
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form class="form-container" action="#">
+    <h1 style="color:#5d17cf;">Chat</h1>
+
+    <label for="msg">Enter your message below!</label>
+    <textarea placeholder="Type your message..." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Cancel/Close</button>
+  </form>
+</div>
+  </body>
+
+  <script>
+  //function to open the popup
+  function openForm(){
+    document.getElementById("myForm").style.display="block";
+  }
+  //function to close the popup
+  function closeForm(){
+    document.getElementById("myForm").style.display="none";
+  }
+</script>
+</html>

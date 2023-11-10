@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealPhone</title>
+    <link rel="stylesheet" href="mobile-style.css">
+    <script src="https://kit.fontawesome.com/8380a84a61.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!--<div class="main">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="mobile.html">Phone</a></li>
+                    <li><a href="#">Accesories</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </div>
+        </nav>-->
+    <div class="main">
+        <nav>
+
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="Home.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="Phone.html"><i class="fa-solid fa-phone"></i>Phone</a></li>
+                    <li><a href="#"><i class="fa-solid fa-screwdriver-wrench"></i>Accesories</a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+<!---------------container--------------->
+<div class="container">
+<!---------------sidebar--------------->
+<input type="checkbox" name="" id="check">
+    <div class="sidebar">
+
+        <label for="check">
+            <span class="fas fa-times" id="times"></span>
+            <span class="fas fa-bars" id="bars"></span>
+        </label>
+        <div class="head">Menu</div>
+        <div class="list-item">
+            <ol>
+            
+                <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-phone"></i>Phone</a></li>
+                <li><a href="#"><i class="fas fa-users"></i>Services</a></li>
+                <li><a href="#"><i class="fas fa-arrow-up"></i>Updates</a></li>
+                <li><a href="#"><i class="fa-solid fa-percent"></i>Offers</a></li>
+                <li><a href="Home.html"><i class="fas fa-info"></i>Info</a></li>
+            </ol>
+        </div>
+    </div>
+
+<!---------Details---------->
+        <div class="details">
+            <div class="overlay">
+                
+            </div>
+            <img src="images/mobile.png" class="mobile">
+            <div id="rotation">
+                <div class="feature one">
+                    <img src="images/camera.png">
+                    <div>
+                        <h2>Camera</h2>
+                        <p>12MP, Wide Angle Lens</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="images/processor.png">
+                    <div>
+                        <h2>Processor</h2>
+                        <p>Snapdragon Octa-core 11nm</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="images/display.png">
+                    <div>
+                        <h2>Display</h2>
+                        <p>6.5" Mini-Drop Fullscreen</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="images/battery.png">
+                    <div>
+                        <h2>Battery Life</h2>
+                        <p>5000mAh, 720Hrs Standby</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-phone">
+            <h2>Samsung Galaxy S10</h2>
+                <ul>
+                    <li><i class="fa-solid fa-calendar-days"></i>Released 2019, March 08</li>
+                    <li><i class="fa-solid fa-server"></i>157g, 7.8mm thickness</li>
+                    <li><i class="fa-solid fa-code-compare"></i>Android 9.0, up to Android 12, One UI 4.1</li>
+                    <li><i class="fa-sharp fa-solid fa-microchip"></i>128GB/512GB storage, microSDXC</li>
+                </ul>
+
+                <div class="price">
+                    <h3 id="old"><s>354 500 LKR</s></h3>
+                    <h3 id="new">335 000 LKR</h3>
+                </div>
+                <hr>
+            <p>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
+            </p>
+            
+        </div>
+        
+
+        <div class="controls">
+            <img src="images/arrow.png" id="upbtn">
+            <h3>Feature</h3>
+            <img src="images/arrow.png" id="downbtn">
+        </div>
+    </div>
+</div>
+
+    <script>
+        var rotation = document.getElementById("rotation");
+        var upButton = document.getElementById("upbtn");
+        var downButton = document.getElementById("downbtn");
+
+        var rotateValue = rotation.style.transform;
+        var rotateSum;
+
+        upButton.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            rotation.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        downButton.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(90deg)";
+            rotation.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+</body>
+</html>
